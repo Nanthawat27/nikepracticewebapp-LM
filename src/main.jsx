@@ -17,6 +17,7 @@ import Sale from './Pages/Sale.jsx';
 import Kids from './Pages/Kids.jsx';
 import Design from './Pages/Design.jsx';
 import SNKRS from './Pages/SNKRS.jsx';
+import Jordan from './Pages/Jordan.jsx';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: "/Snkrs",
     element: <SNKRS></SNKRS>
+  },
+  {
+    path: "/Jordan",
+    element: <Jordan></Jordan>
   }
 ])
 

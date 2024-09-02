@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <header>
       <div>
-        <a href='App'><img src='https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg'></img></a>
+        <a href='/Jordan'><img src='https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg'></img></a>
       </div>
       <ul>
         <li><a href='#'>ค้นหาร้านค้า</a></li>

@@ -18,6 +18,10 @@ import Kids from './Pages/Kids.jsx';
 import Design from './Pages/Design.jsx';
 import SNKRS from './Pages/SNKRS.jsx';
 import Jordan from './Pages/Jordan.jsx';
+import MenShoes from './SubPages/MenShoes.jsx';
+import MenApparel from './SubPages/MenApparel.jsx';
+import MenAccessories from './SubPages/MenAccessories.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -59,7 +63,21 @@ const router = createBrowserRouter([
   {
     path: "/Jordan",
     element: <Jordan></Jordan>
+  },
+  {
+    path: "/Men/Shoes",
+    element: <MenShoes></MenShoes>
+  },
+  {
+    path: "/Men/Apparel",
+    element: <MenApparel></MenApparel>
+  },
+  {
+    path: "/Men/Accessories",
+    element: <MenAccessories></MenAccessories>
   }
+  
+
 ])
 
 createRoot(document.getElementById('root')).render(

@@ -1,37 +1,57 @@
 import React from 'react'
+import './Navbar.css'
+import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+
+const NavbarScroll = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    if (window.scrollY > lastScrollY) {
+      // เมื่อเลื่อนลง, ซ่อน Navbar
+      setShowNavbar(false);
+    } else {
+      // เมื่อเลื่อนขึ้น, แสดง Navbar
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  }
+}
+
 
 function Navbar() {
   return (
     <>
       <header>
       <div>
-        <a href='/Jordan'><img src='https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg'></img></a>
+        <Link to ='/Jordan'><img src='https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg'></img></Link>
       </div>
       <ul>
-        <li><a href='#'>ค้นหาร้านค้า</a></li>
+        <li><Link to='#'>ค้นหาร้านค้า</Link></li>
         <div></div>
-        <li><a href=''>ความช่วยเหลือ</a></li>
+        <li><Link to=''>ความช่วยเหลือ</Link></li>
         <div></div>
-        <li><a href=''>เข้าร่วมกับเรา</a></li>
+        <li><Link to=''>เข้าร่วมกับเรา</Link></li>
         <div></div>
-        <li><a href=''>ลงชื่อเข้าใช้</a></li>
+        <li><Link to=''>ลงชื่อเข้าใช้</Link></li>
       </ul>
     </header>
     <nav>
       <div>
-        <a href='/'>
+        <Link to='/'>
         <img src='https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg'></img>
-        </a>
+        </Link>
         </div>
       <ul>
-        <li><a className='test' href='/Saleoff'>ลดเพิ่ม 30% 🔥</a></li>
-        <li><a href='New'>ใหม่และโดดเด่น</a></li>
-        <li><a href='Men'>ผู้ชาย</a></li>
-        <li><a href='Women'>ผู้หญิง</a></li>
-        <li><a href='Kids'>เด็ก</a></li>
-        <li><a href='Sale'>ลดราคา</a></li>
-        <li><a href='Design'>ออกแบบเองกับ</a></li>
-        <li><a href='Snkrs'>SNKRS</a></li>
+        <li><Link to='/Saleoff'>ลดเพิ่ม 30% 🔥</Link></li>
+        <li><Link to='/New'>ใหม่และโดดเด่น</Link></li>
+        <li><Link to='/Men'>ผู้ชาย</Link></li>
+        <li><Link to='/Women'>ผู้หญิง</Link></li>
+        <li><Link to='/Kids'>เด็ก</Link></li>
+        <li><Link to='/Sale'>ลดราคา</Link></li>
+        <li><Link to='/Design'>ออกแบบเองกับ</Link></li>
+        <li><Link to='/Snkrs'>SNKRS</Link></li>
       </ul>
       <div className='search'>
       <input type="text" placeholder='ค้นหา'/>

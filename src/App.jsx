@@ -7,13 +7,6 @@ function App() {
 
   return (
     <>
-    <Navbar></Navbar>
-    <body>
-
-
-    </body>
-    <Footer></Footer>
-    
     </>
   )
 }

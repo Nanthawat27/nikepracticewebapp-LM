@@ -1,22 +1,27 @@
-.class-men {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 103px;
+.main-men-offset {
+    height: 3.125rem;
+}
 
+.class-men {
+    
+    height: 103px;
+    width: 95%;
+    margin: auto;
+
+
+    
     h1 {
-        margin-left: 3.5%;
+        
         font-size: 24px;
         font-weight: 500;
     }
 
-    ul {
-        display: flex;
-        margin-right: 10%;
-        font-size: 1rem;
+     ul {
+   
+        
+       
         li {
-            list-style: none;
-            padding: 1rem;
+            
             a {
                 color: black;
                 text-decoration: none;
@@ -27,7 +32,7 @@
                 transition: 0.3s;
             }
         }
-    }
+    } 
 }
 
 .video-content {
@@ -36,27 +41,16 @@
     align-items: center;
     video {
         
-        width: 1344px;
-        height: 653px;
+        width: 93%;
+        height: 100%;
     }
     video::-webkit-media-controls-panel {
         display: none !important;
         opacity: 1 !important;}
     
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2 {
-            margin-top: 1rem;
-            font-size: 70px;
-      margin-bottom: 1rem;
-        }
-        p {
-            margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-weight: 300;
-        }
+        width: 93%;
+
         button {
             color: white;
           background: #101010;
@@ -71,8 +65,27 @@
             background: #707072;
             transition: 0.3s;
           }
+    }    
 
-    }
+
+    /* .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        h2 {
+            margin-top: 1rem;
+            font-size: 70px;
+      margin-bottom: 1rem;
+        }
+        p {
+            margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+        }
+        
+
+    } */
     
 }
 
@@ -103,7 +116,7 @@
     }
   }
 
-.bottommenuoffset {
+/* .bottommenuoffset {
     display: flex;
     justify-content: space-between;
-}
+} */

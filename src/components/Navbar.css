@@ -1,15 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #f5f5f5;
     height: 36px;
-    font-size: 12px;
-    font-weight: 550;
-    div {
-      margin-left: 3.5%;
-      display: flex;
+    
+    
+    .mainheader {
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        height: 100%;
+        margin: auto;
+    div {
+    
       img {
         height: 20px;
         max-height: 100%;
@@ -20,7 +26,8 @@ header {
       display: flex;
       list-style: none;
       align-items: center;
-      margin-right: 3.5%;
+      font-size: 12px;
+    font-weight: 550;
       li {
   
         a {
@@ -39,41 +46,62 @@ header {
       }
     }
   }
+}
   
   nav {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    div {
-      margin-left: 3.5%;
+    width: 95%;
+    margin: auto;
+    background: white;
+    
+    .leftlogo {
+      
       img {
         width: 60px;
       }
     }
-    ul {
-      display: flex;
-      list-style: none;
-      align-items: center;
-      margin-left: 10%;
-      font-size: 16px;
-      li {
-        padding: 0.8rem;
-        a {
-          text-decoration-color: white;
-          text-underline-offset: 8px;
-          color: black;
-        }
-        a:hover {
-          transition: 0.3s;
-          text-decoration-color: black;
-          text-decoration-thickness: 2px;
-          text-underline-offset: 8px;
-        }
-      }
+    .navbarlist {
+        margin-left: -6.25rem;
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            gap: 20px;
+            li {
+                margin: 0;
+
+              display: flex;
+              text-align: center;
+              
+              a {
+                  text-decoration: underline;
+              text-decoration-color: transparent;
+              text-decoration-thickness: 2px;
+              text-underline-offset: 8px;
+              }
+              
+              a:hover {
+              text-decoration: underline;
+              text-decoration-color: black;
+              text-decoration-thickness: 2px;
+              text-underline-offset: 8px;
+              transition: 0.3s;
+              }
+            }
+            
+          }
     }
+    
     div {
-      margin-right: 3.5%;
+      
       input {
         background: #f5f5f5;
         border: none;
@@ -99,6 +127,7 @@ header {
       i:hover {
         background: #e5e5e5;
         border-radius: 100%;
+        cursor: pointer;
       }
     }
   }
@@ -107,3 +136,5 @@ header {
     height: 74px;
     background: #f5f5f5;
   }
+  
+

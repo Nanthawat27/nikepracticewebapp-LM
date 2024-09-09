@@ -8,6 +8,7 @@ import slide4 from '../assets/slide4.png'
 import slide5 from '../assets/slide5.png'
 import slide6 from '../assets/slide6.png'
 import './Home.css'
+import ButtomMenu from '../components/ButtomMenu'
 function Home() {
   return (
     <>
@@ -16,15 +17,15 @@ function Home() {
         <div>
             <div>
               <div></div>
-                <a href=''><img src='https://c.static-nike.com/a/images/f_auto,cs_srgb/w_1920,c_limit/tpqid8vgfey6m4ke86te/123-joyride-cdp-apla-xa-xp.jpg' alt='banner'></img></a>
+                <a href=''><img src='https://grays.life/wp-content/uploads/2021/01/nike-running-ad4.jpg' alt='banner'></img></a>
               <div></div>
             </div>
-            <div className='banner-content'>
-              <div className='banner-list'>
-                <p>รองเท้าวิ่งไลฟ์สไตล์</p>
-                <h1>โดดเด่นเป็นพิเศษ</h1>
-                <div>พบกับคอลเลกชันใหม่ล่าสุดของรองเท้าวิ่งสไตล์เรโทร ตัวช่วยสุดเจ๋งที่จะช่วยอัปเกรดลุคของคุณให้ปังยิ่งขึ้น</div>
-                <button>เลือกซื้อ</button>
+            <div className=' banner-content'>
+              <div className='block items-center space-y-6 mt-5 md:flex flex-col lg:flex banner-list'>
+                <p className='font-bold'>รองเท้าวิ่งไลฟ์สไตล์</p>
+                <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>โดดเด่นเป็นพิเศษ</h1>
+                <h1 className='font-light'>พบกับคอลเลกชันใหม่ล่าสุดของรองเท้าวิ่งสไตล์เรโทร ตัวช่วยสุดเจ๋งที่จะช่วยอัปเกรดลุคของคุณให้ปังยิ่งขึ้น</h1>
+                <button className=''>เลือกซื้อ</button>
               </div>
             </div>
         </div>
@@ -105,10 +106,10 @@ function Home() {
               <div></div>
           </div>
           <div className='banner-content'>
-              <div className='banner-list'>
-                <p>Nike Jordan 1 High Chicago</p>
-                <h1>ความยืดหยุ่น และความมั่นคง</h1>
-                <div>ยึดเกาะ มั่นคง ไลฟ์สไตล์ Nike Jordan 1 High Chicago</div>
+              <div className='block space-y-5 md:flex flex-col items-center lg:flex banner-list'>
+                <p className='font-bold mt-5'>Nike Jordan 1 High Chicago</p>
+                <h1 className='font-bold text-3xl md:text-5xl'>ความยืดหยุ่น และความมั่นคง</h1>
+                <p className='font-light'>ยึดเกาะ มั่นคง ไลฟ์สไตล์ Nike Jordan 1 High Chicago</p>
                 <button>เลือกซื้อ</button>
               </div>
           </div>
@@ -121,67 +122,7 @@ function Home() {
           
           
         </div>
-        <div className='offsetmenu'></div>
-        <div className='bottommenuoffset'>
-    
-        <div class="menu">
-        <div className='offset'></div>
-        <div class="menu-column">
-            <ul>
-                <h3>ไอคอน</h3>
-                <li>Air Force 1</li>
-                <li>Huarache</li>
-                <li>Air Max 90</li>
-                <li>Air Max 95</li>
-                <li>Air Max 97</li>
-                <li>Air Max 270</li>
-                <li>Air Max 720</li>
-                <li>Air Max ทั้งหมด</li>
-                <li>VaporMax</li>
-            </ul>
-        </div>
-        <div class="menu-column">
-            <ul>
-                <h3>รองเท้า</h3>
-                <li>รองเท้าทั้งหมด</li>
-                <li>รองเท้าออกแบบเอง</li>
-                <li>รองเท้า Jordan</li>
-                <li>รองเท้าวิ่ง</li>
-                <li>รองเท้าบาสเก็ตบอล</li>
-                <li>รองเท้าฟุตบอล</li>
-                <li>รองเท้ายิมและเทรนนิ่ง</li>
-                <li>รองเท้าไลฟ์สไตล์</li>
-            </ul>
-        </div>
-        <div class="menu-column">
-            <ul>
-                <h3>เสื้อผ้า</h3>
-                <li>เสื้อผ้าทั้งหมด</li>
-                <li>ชุดสุภาพ</li>
-                <li>เสื้อมีฮู้ดและเสื้อแบบสวม</li>
-                <li>เสื้อ</li>
-                <li>เสื้อแจ็คเก็ต</li>
-                <li>สินค้ากระชับกล้ามเนื้อและ Nike Pro</li>
-                <li>กางเกงและเลกกิ้ง</li>
-                <li>กางเกงขาสั้น</li>
-            </ul>
-        </div>
-        <div class="menu-column">
-            <ul>
-                <h3>สำหรับเด็ก</h3>
-                <li>รองเท้าทารกและเด็กวัยหัดเดิน</li>
-                <li>รองเท้าเด็ก</li>
-                <li>รองเท้าเด็ก Jordan</li>
-                <li>รองเท้าสเก็ตบอลเด็ก</li>
-                <li>รองเท้าวิ่งเด็ก</li>
-                <li>เสื้อผ้าเด็ก</li>
-                <li>เป้สะพายหลังเด็ก</li>
-                <li>ถุงเท้าเด็ก</li>
-            </ul>
-        </div>
-        <div className='offset'></div>
-    </div>
-    </div>
+        <ButtomMenu></ButtomMenu>
         <Footer></Footer>
     </main>
     </>

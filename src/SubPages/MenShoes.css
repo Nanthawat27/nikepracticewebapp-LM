@@ -1,0 +1,44 @@
+.headeroffset {
+    height: 1rem;
+    width: 100%;
+}
+
+/* .wall-header {
+    display: flex;
+    justify-content: space-between;
+    height: 51px;
+    .leftmenu {
+
+    }
+    .rightmenu {
+        display: flex;
+        
+    }
+} */
+
+.wall-header {
+    height: 51px;
+    width: 93%;
+    margin: auto;
+    
+    .header-contentbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftmenu {
+            
+            h1 {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+        .rightmenu {
+            display: flex;
+            
+            div {
+                padding: 10px;
+            }
+        }
+    }
+}
+

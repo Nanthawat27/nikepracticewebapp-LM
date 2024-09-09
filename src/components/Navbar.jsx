@@ -3,27 +3,11 @@ import './Navbar.css'
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
-const NavbarScroll = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleScroll = () => {
-    if (window.scrollY > lastScrollY) {
-      // เมื่อเลื่อนลง, ซ่อน Navbar
-      setShowNavbar(false);
-    } else {
-      // เมื่อเลื่อนขึ้น, แสดง Navbar
-      setShowNavbar(true);
-    }
-    setLastScrollY(window.scrollY);
-  }
-}
-
-
 function Navbar() {
   return (
     <>
-      <header>
+      <header class="hidden md:flex">
+      <div className='mainheader'>
       <div>
         <Link to ='/Jordan'><img src='https://upload.wikimedia.org/wikipedia/en/3/37/Jumpman_logo.svg'></img></Link>
       </div>
@@ -36,13 +20,16 @@ function Navbar() {
         <div></div>
         <li><Link to=''>ลงชื่อเข้าใช้</Link></li>
       </ul>
+      </div>
     </header>
     <nav>
-      <div>
+      <div className='leftlogo'>
         <Link to='/'>
         <img src='https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg'></img>
         </Link>
         </div>
+      <div></div>
+      <div className='hidden md:flex navbarlist'>
       <ul>
         <li><Link to='/Saleoff'>ลดเพิ่ม 30% 🔥</Link></li>
         <li><Link to='/New'>ใหม่และโดดเด่น</Link></li>
@@ -53,10 +40,14 @@ function Navbar() {
         <li><Link to='/Design'>ออกแบบเองกับ</Link></li>
         <li><Link to='/Snkrs'>SNKRS</Link></li>
       </ul>
+      </div>
+      
       <div className='search'>
-      <input type="text" placeholder='ค้นหา'/>
+      <input className="hidden xl:inline block"type="text" placeholder='ค้นหา'/>
+      <i class="inline block xl:hidden fa-solid fa-magnifying-glass"></i>
       <i class="fa-regular fa-heart"></i>
       <i class="fa-solid fa-bag-shopping"></i>
+      <i class="md:hidden fa-solid fa-bars"></i>
       </div>
     </nav>
     <section>

@@ -5,6 +5,11 @@ import Footer from '../components/Footer'
 import NikeAds from '../assets/NikeAds.mp4'
 import { Link } from 'react-router-dom'
 import ButtomMenu from '../components/ButtomMenu'
+import slide7 from '../assets/slide77.png'
+import slide8 from '../assets/slide8.png'
+import slide9 from '../assets/slide9.png'
+import slide10 from '../assets/slide10.png'
+import slide11 from '../assets/slide11.png'
 
 function Mens() {
   return (
@@ -22,7 +27,7 @@ function Mens() {
       <div></div>
     </div>
     <div className='video-content'>
-      <video className="w-[9:16]" preload="true" muted autoplay="autoplay" loop="loop" playsinline>
+      <video className="w-full aspect-[9/16] lg:aspect-video object-cover" preload="auto" muted autoPlay="autoPlay" loop="loop" playsinline>
           <source src={NikeAds} type="video/mp4"/>
       </video>
       <div className='space-y-6 md:flex flex-col items-center mt-5 content '>
@@ -50,7 +55,48 @@ function Mens() {
               <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
+    <div className='offsetslide'></div>
+    <div class="flex overflow-x-scroll space-x-4 p-4">
 
+              
+
+              <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+            <img src={slide8} alt="Air Max Dn" class="w-full h-auto"></img>
+            <div class="mt-4">
+              <h2 class="text-xl font-bold">Air Max Dn</h2>
+              <p class="text-gray-600">ค้นหารองเท้า Air Max คู่ที่ใช่สำหรับคุณ</p>
+              <a href="#" class="text-blue-500 hover:underline">ดูเพิ่มเติม</a>
+            </div>
+          </div>
+
+          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+            <img src={slide9} alt="Air Max Dn" class="w-full h-auto"></img>
+            <div class="mt-4">
+              <h2 class="text-xl font-bold">Air Max Dn</h2>
+              <p class="text-gray-600">ค้นหารองเท้า Air Max คู่ที่ใช่สำหรับคุณ</p>
+              <a href="#" class="text-blue-500 hover:underline">ดูเพิ่มเติม</a>
+            </div>
+          </div>
+
+          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+            <img src={slide10} alt="Air Max Dn" class="w-full h-auto"></img>
+            <div class="mt-4">
+              <h2 class="text-xl font-bold">Air Max Dn</h2>
+              <p class="text-gray-600">ค้นหารองเท้า Air Max คู่ที่ใช่สำหรับคุณ</p>
+              <a href="#" class="text-blue-500 hover:underline">ดูเพิ่มเติม</a>
+            </div>
+          </div>
+
+          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+            <img src={slide11} alt="Air Max Dn" class="w-full h-auto"></img>
+            <div class="mt-4">
+              <h2 class="text-xl font-bold">Air Max Dn</h2>
+              <p class="text-gray-600">ค้นหารองเท้า Air Max คู่ที่ใช่สำหรับคุณ</p>
+              <a href="#" class="text-blue-500 hover:underline">ดูเพิ่มเติม</a>
+            </div>
+          </div>
+
+          </div>
 
 
     </div>

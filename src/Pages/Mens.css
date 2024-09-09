@@ -36,17 +36,14 @@
 }
 
 .video-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    video {
+    width: 95%;
+    margin: auto;
+    /* video {
         
         width: 93%;
         height: 100%;
-    }
-    video::-webkit-media-controls-panel {
-        display: none !important;
-        opacity: 1 !important;}
+    } */
+    
     
     .content {
         width: 93%;

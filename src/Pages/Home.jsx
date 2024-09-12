@@ -41,7 +41,7 @@ function Home() {
           
           <div class="flex overflow-x-scroll space-x-4 p-4">
 
-              <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+              <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
                 <img src={slide1} alt="Air Max Dn" class="w-full h-auto"></img>
                 <div class="mt-4">
                   <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -50,7 +50,7 @@ function Home() {
                 </div>
               </div>
 
-              <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+              <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide2} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -59,7 +59,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide3} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -68,7 +68,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide4} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -77,7 +77,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide5} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -86,7 +86,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="min-w-[450px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide6} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>

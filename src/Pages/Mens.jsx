@@ -17,7 +17,7 @@ function Mens() {
     <Navbar></Navbar>
     <div className='main-men'>
     <div className='lg:hidden main-men-offset'></div>
-    <div className='block space-y-4 lg:flex justify-between items-center class-men'>
+    <div className='block space-y-4 lg:flex space-y-0 items-center justify-between class-men'>
       <h1 className=''>ผู้ชาย</h1>
       <ul className='flex space-x-4 lg:flex'>
         <li><Link to='/Men/Shoes'>รองเท้า</Link></li>
@@ -60,7 +60,7 @@ function Mens() {
 
               
 
-              <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+              <div class="min-w-[400px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide8} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -69,7 +69,7 @@ function Mens() {
             </div>
           </div>
 
-          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide9} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -78,7 +78,7 @@ function Mens() {
             </div>
           </div>
 
-          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide10} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>
@@ -87,7 +87,7 @@ function Mens() {
             </div>
           </div>
 
-          <div class="min-w-[450px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
+          <div class="min-w-[400px] lg:min-w-[750px] bg-white p-4 shadow-lg rounded-lg flex flex-col">
             <img src={slide11} alt="Air Max Dn" class="w-full h-auto"></img>
             <div class="mt-4">
               <h2 class="text-xl font-bold">Air Max Dn</h2>

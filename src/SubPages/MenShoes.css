@@ -21,24 +21,58 @@
     width: 93%;
     margin: auto;
     
-    .header-contentbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .leftmenu {
+}
+
+
+
+.horizonalmenubar::-webkit-scrollbar {
+    display: none; /* ซ่อนแถบเลื่อน */
+    scrollbar-width: none; 
+  }
+
+.resultandfilter {
+    width: 93%;
+    margin: auto;
+}
+
+.filter-button {
+    background: white;
+    border-radius: 30px;
+    border: 1px #e5e5e5 solid;
+    width: 25%;
+
+    
+}
+
+.filter-button:hover {
+    border: 1px black solid;
+ }
+
+ .leftmenubox {
+    width: 18%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: end;
+    position: relative;
+
+    .leftmenulist {
+        width: 80%;
+        height: 100%;
+        
+
+        .accordionmenu {
+
+            margin-top: 2rem;
+            width: 90%;
             
-            h1 {
-                font-size: 24px;
-                font-weight: 500;
-            }
-        }
-        .rightmenu {
-            display: flex;
-            
+
             div {
-                padding: 10px;
+                border-top: 1px #e5e5e5 solid;
+                padding-top: 1rem;
             }
         }
     }
-}
+ }
 
+ 
